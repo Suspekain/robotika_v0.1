@@ -275,10 +275,11 @@
         <div class="row">
           <div class="col-md-7 col-sm-12 mb-3">
             <div class="da-contact-message">
-              <form action="#" method="POST">
+              <form action="{{route('store')}}" method="POST">
+                @csrf
                 <div class="row">
                   <div class="col-md-12 col-sm-12 mb-3">
-                    <input class="mr-3 form-control" type="text" name="nombre" placeholder="*Nombre" required="required"/>
+                    <input class="mr-3 form-control" type="text" name="name" placeholder="*Nombre" required="required"/>
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -288,7 +289,7 @@
                 </div>
                 <div class="row mb-3">
                   <div class="col">
-                    <textarea class="form-control" name="mensaje" placeholder="*Tu mensaje" rows="4" required="required"></textarea>
+                    <textarea class="form-control" name="message" placeholder="*Tu mensaje" rows="4" required="required"></textarea>
                   </div>
                 </div>
                 <div class="row">
